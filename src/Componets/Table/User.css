@@ -1,0 +1,131 @@
+body {
+    background: #101311;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .user-card {
+    margin: 200px auto;
+    width: 400px;
+    box-shadow: -10px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: box-shadow 0.2s ease-in;
+    cursor: pointer;
+    background: #0b1b2f;
+    text-align: left;
+  }
+  
+  .user-card:hover {
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  
+  .user-card .user-details {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    width: 80%;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  .user-card .user-details .user-name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .user-card .user-details .user-email {
+    font-size: 14px;
+    color: #0f5fc0;
+    font-weight: 500;
+  }
+  .user-card .user-details .user-text{
+    margin-top: 5px;
+    font-size: 15px;
+    color: #666;
+  }
+  .user-card .contact-user {
+    margin-bottom: 15px;
+    height: 35px;
+    width: 80%;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    background: #035f7d;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
+  .user-card.skeleton .user-cover {
+    background: #e2e2e2;
+  }
+  
+  .user-card.skeleton .user-cover .user-avatar {
+    display: none;
+  }
+  
+  .user-card.skeleton .user-cover::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -35px;
+    border: 2px solid #fff;
+    z-index: 10;
+    background: #e2e2e2;
+  }
+  
+  
+  .user-card.skeleton .hide-text {
+    background: #e2e2e2;
+    color: transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .user-card.skeleton .hide-text::before {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: linear-gradient(to right, #e2e2e2 25%, #d5d5d5 50%, #e2e2e2 100%);
+    animation-name: gradient-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    filter: blur(5px);
+  }
+  .user-btn{
+    padding: 10px;
+    display: flex;
+  }
+  .user-btn button{
+    border: none;
+    background: green;
+    height: 40px;
+    width: 180px;
+    margin: 0 10px;
+    border-radius: 5px;
+  }
+  
+  @keyframes gradient-animation {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 100%;
+    }
+  }

@@ -1,0 +1,80 @@
+.create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.create-container{
+    overflow: hidden;
+    width: 500px;
+    background-color: #11151f;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat( 1 , 1fr);
+    padding: 10px;
+}
+.create-container input{
+    height: 40px;
+    background: none;
+    outline: none;
+    padding:  0 20px;
+    border: none;
+    border-bottom: 2px solid #1F2739;
+    color: white;
+    font-size: 18px;
+    border-left: 1px solid #1F2739;
+    margin: 20PX 0;
+    width: 100%;
+}
+.create-container label{
+    color: rgb(162, 162, 240);
+    font-weight: 600;
+    position: relative;
+    background-color: rgb(37, 70, 37);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    
+}
+.create-container div{
+    display: flex;
+    align-items: center;
+}
+.create-container div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.create-container button:first-child{
+    background-color: rgb(246, 85, 85);
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 40%; 
+    cursor: pointer;
+}
+
+.create-container button:last-child{
+    background-color: rgb(34, 34, 231);
+    color: white;
+    cursor: pointer;
+
+    font-weight: 700;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 40%;
+}
+.validate{
+    background-color: rgb(193, 81, 81) !important;
+    border: none;
+}
